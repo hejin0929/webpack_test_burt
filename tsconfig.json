@@ -6,6 +6,22 @@
       "target": "es5",
       "jsx": "react-jsx",
       "allowJs": true,
-      "moduleResolution": "node"
-    }
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "baseUrl": "./",
+      "paths":{
+        "@my/*":[
+          "./src/*"
+        ],
+        "@src/*": [
+          "./src/*"
+        ]
+      }
+    },
+    "include": [
+      "src",
+      "typed-css.d.ts",
+      "**/*.ts",
+      "**/*.tsx"
+    ]
 }
