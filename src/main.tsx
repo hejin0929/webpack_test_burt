@@ -1,4 +1,4 @@
 import * as ReactDOM from "react-dom";
-import HomePage from "./pages/home/index.page";
+import Main from "./route";
 
-ReactDOM.render(<HomePage />, document.getElementById("root"));
+ReactDOM.render(<Main />, document.getElementById("root"));

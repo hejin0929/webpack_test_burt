@@ -1,4 +1,3 @@
-// import * as Api from "@my/api/index";
 import test from "@my/assets/test.jpg";
 import * as Api from "@src/api/index";
 import { FC } from "react";

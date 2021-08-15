@@ -8,8 +8,12 @@
     "dev": "webpack-dev-server --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode development",
     "watch": "webpack --watch",
-    "swagger-ts": "node ./src/servers/swagger/index.js"
+    "swagger-ts": "node ./src/servers/swagger/index.js",
+    "lint": "eslint --ext .js --ext .jsx src"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -31,6 +35,8 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.0",
+    "mobx": "^6.3.2",
+    "mobx-react": "^7.2.0",
     "node-sass": "^6.0.1",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "path": "^0.12.7",
@@ -47,6 +53,11 @@
   "devDependencies": {
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-react": "^7.24.0",
+    "pre-commit": "^1.2.2",
     "ts-loader": "^9.2.5",
     "typescript": "^4.3.5",
     "webpack-cli": "^3.3.12"

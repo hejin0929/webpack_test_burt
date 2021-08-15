@@ -1,27 +1,18 @@
 {
-    "compilerOptions": {
-      "outDir": "./dist/",
-      "noImplicitAny": true,
-      "module": "es6",
-      "target": "es5",
-      "jsx": "react-jsx",
-      "allowJs": true,
-      "sourceMap": true,
-      "moduleResolution": "node",
-      "baseUrl": "./",
-      "paths":{
-        "@my/*":[
-          "./src/*"
-        ],
-        "@src/*": [
-          "./src/*"
-        ]
-      }
-    },
-    "include": [
-      "src",
-      "typed-css.d.ts",
-      "**/*.ts",
-      "**/*.tsx"
-    ]
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ES2020",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@my/*": ["./src/*"],
+      "@src/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "typed-css.d.ts", "**/*.ts", "**/*.tsx"]
 }
