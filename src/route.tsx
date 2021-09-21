@@ -1,7 +1,5 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-const Routes: FC = () => {
-  return <div>123</div>;
-};
+const Routes: FC = () => <div>123</div>;
 
 export default Routes;

@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
   },
   parser: 'babel-eslint',
-  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react/jsx-runtime'],
   parserOptions: {
     ecmaVersion: 7,
     // 开启实验属性
@@ -409,5 +409,20 @@ module.exports = {
     ],
     // 禁止未使用的变量
     'no-unused-vars': 0,
+  },
+  'jsx-runtime': {
+    plugins: [
+      'react'
+    ],
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true
+      },
+      jsxPragma: null // for @typescript/eslint-parser
+    },
+    rules: {
+      'react/react-in-jsx-scope': 0,
+      'react/jsx-uses-react': 0
+    }
   },
 };

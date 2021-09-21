@@ -204,7 +204,7 @@ const writeFileApi = (apiData) => {
     ${Array.from(urlPaths).map((v) => `\n'${v[0]}': ${v[1]}\n`)}
   }
   `;
-  fs.writeFileSync(`${API_PATH}/index.ts`, template);
+  fs.writeFileSync(`${API_PATH}/config.ts`, template);
   return moduleList;
 };
 
